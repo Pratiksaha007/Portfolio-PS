@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c60b86d356.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images2/ratik 3.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Certifications</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Software Engineer</p>
+            <h1>Hi, I'm <span>Pratik</span><br>a B.Tech CSE Student and<br>a Passionate Coder</h1>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------about------------------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images2/user-png 2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I’m a passionate and driven Computer Science undergraduate at UEM Kolkata, currently in my 3rd year. I specialize in programming with strong proficiency in Python, Java, and C, and have hands-on experience in frameworks like MATLAB and working with data structures and algorithms. My academic journey and project work reflect my deep interest in artificial intelligence, machine learning, and natural language processing. I’ve built innovative projects like YouTube video summarizers and text-based question answering systems. I’m committed to continuous learning, solving real-world problems, and growing as a developer through curiosity, consistency, and creativity.
+                </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Python Development</span><br>Crafting real-world solutions using Python, leveraging powerful libraries and frameworks for automation, data handling, and application development.</li>
+                        <li><span>Java Programming</span><br>Designing cross-platform applications and object-oriented solutions, with experience in Android development and Java-based system design.</li>
+                        <li><span>AI&ML</span><br>Building intelligent agents to automate tasks and enhance accuracy using AI and ML principles, including deep learning and NLP for efficient human language understanding.</li>
+                        <li><span>Data Mining & Analysis</span><br>Collecting and analyzing data from diverse online sources to build effective datasets and extract actionable insights—vital for training and improving AI models.</li>
+                        <li><span>Web Development</span><br>Creating visually appealing, responsive websites using HTML, CSS, and JavaScript, ensuring seamless user experience across all devices.</li>
+                        <li><span>Computer Vision</span><br>Developing real-time, autonomous systems using Python and computer vision libraries that enable machines to interpret and act on visual data without human intervention.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - Current</span><br>Cyber Security internship at CCoE UEM, Kolkata</li>
+                        <li><span>10<sup>th</sup> June 2024 - 6<sup>th</sup> July 2024</span><br>4 weeks IBM skillsBuild AI-ML intershhip program.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br><b>Bachelor of Technology (B.Tech)</b> | <i>Computer Science and Engineering</i> | University of Engineering and Management | Pursuing 3<sup>rd</sup> year.</li>
+                        <li><span>2022</span><br>Higher Secondary Degree (Class XII) | <i>WBCHSE</i> Board.</li>
+                        <li><span>2020</span><br>Secondary Degree (Class X) | <i>WBBSE</i> Board.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -----------------------------services------------------------------------------- -->
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Certifications</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python Project on Analytics</h2>
+                <p>1<sup>st</sup> July 2024 - 1<sup>st</sup> November 2024<br>From CB Classes Kolkata.</p>
+                <a href="https://drive.google.com/file/d/15Br-rA37A8HVeGPXsl1QLxzPe1g1Hos1/view?usp=drive_link" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>IBM SkillsBuild 4-week AI-ML Internship Program </h2>
+                <p>10<sup>th</sup> June 2024 - 6<sup>th</sup> July 2024<br>4 weeks IBM skillsBuild AI-ML intershhip program.</p>
+                <a href="https://drive.google.com/file/d/1QlAgVsFOZ0MgrQLxCE7ufHh2NsZ_qj4F/view?usp=drive_link" target="_blank">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>DSA with C Programming</h2>
+                <p>1<sup>st</sup> November 2023 - 9<sup>th</sup> February 2024<br>From CB Classes Kolkata.</p>
+                <a href="https://drive.google.com/file/d/1U89DochP7dcspKHT5CJHT0CtUiP_BuqA/view?usp=drive_link" target="_blank">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------------------------------Projects---------------------------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images2/ai summarizer 2.jpg" class="w1">
+                <div class="layer">
+                    <h3>SummarAize</h3>
+                    <p>Leveraging NLP and Transformer models (Hugging Face) to develop tools that generate concise summaries from extremely long videos—greatly reducing the effort required for students to grasp complex concepts efficiently.<br> Tech Stack: Python, Yt_dlp, Whisper libraries, Hugging Face Transformers.
+                    </p>
+                    <a href="https://github.com/Pratiksaha007/Youtube-video-summarizer-main.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/Attandance sys.jpg">
+                <div class="layer">
+                    <h3>Industrial Attandance & Mailing System</h3>
+                    <p>
+                        Utilizing Computer Vision techniques to develop an automated attendance tracking system for organizations and educational institutions. The system accurately monitors presence and instantly notifies respective authorities via email, enhancing accountability and operational efficiency.<br>
+                        Tech Stack: Python, OpenCV, Smtplib, pyttsx3.
+                    </p>
+                    <a href="https://github.com/Pratiksaha007/Attandance-System.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images2/Voice assis.png">
+                <div class="layer">
+                    <h3>Virtual Voice Assistant</h3>
+                    <p>
+                        Created a virtual voice assistant using Python that responds to voice commands to help manage daily tasks such as setting reminders, opening applications, and answering questions—making everyday routines more efficient and hands-free.<br>
+                        Tech Stack: Python, Speech recognition, pyttsx3.
+                    </p>
+                    <a href="https://github.com/Pratiksaha007/Virtual-voice-assistant.git" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- --------------------------------contact------------------------------------------ -->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> pratiksaha469@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91-9748176409</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/pratik-saha-30a581243" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Pratiksaha007" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+                    <a href="https://www.facebook.com/pratik.saha.9889261/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/pratik._saha/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <a href="https://drive.google.com/file/d/1c_rcKglYiW26joBiPRNAkMBsILX-gJuY/view?usp=drive_link" target="_blank" class="btn btn2">View Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Name" required>
+                    <input type="email" name="Email" placeholder="Email address" required>
+                    <textarea name="Message" rows="6" placeholder="Leave a message..."></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Pratik. Made with <i class="fa-solid fa-heart"></i> by PS.</p>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for (tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+
+    var sidemenu= document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-225px";
+    }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyZVJG2oKcDM5ZCY9exi9kGCLuQqhGkCK93-7LokaNXUt2Y7bAJ-tEFZ3got66HOP7lYQ/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent succeccfully."
+        setTimeout(function(){
+            msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+</body>
+</html>
