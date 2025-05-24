@@ -133,7 +133,7 @@ nav ul li a:hover::after{
     display:block
 }
 
-/* -----------------services--------------------- */
+/* -----------------services/certifications--------------------- */
 
 #services{
     padding: 30px;
@@ -172,8 +172,14 @@ nav ul li a:hover::after{
     background: #ff004f;
     transform:translateY(-10px);
 }
+.services-list div a:hover {
+    font-weight: 900;
+    transform: translateY(-5px);
+    transition: transform 0.5s;
+}
 
-/* --------------------------------Portfolio----------------------------- */
+
+/* --------------------------------Portfolio/Projects----------------------------- */
 
 #portfolio{
     padding: 50px 0;
@@ -285,6 +291,10 @@ nav ul li a:hover::after{
     display:inline-block;
     background: #ff004f;
 }
+.btn.btn2:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
+}
 .contact-right form{
     width:100%;
 }
@@ -304,6 +314,10 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+}
+form .btn2:active {
+    transform: scale(0.95);
+    transition: transform 0.1s;
 }
 .copyright{
     width: 100%;

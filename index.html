@@ -139,7 +139,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">See more</a>
+        <a href="https://github.com/Pratiksaha007/CareHive.git" target="_blank" class="btn">See more</a>
     </div>
 </div>
 <!-- --------------------------------contact------------------------------------------ -->
@@ -152,7 +152,7 @@
                 <p><i class="fa-solid fa-paper-plane"></i> pratiksaha469@gmail.com</p>
                 <p><i class="fa-solid fa-phone"></i> +91-9748176409</p>
                 <div class="social-icons">
-                    <a href="www.linkedin.com/in/pratik-saha-30a581243" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.linkedin.com/in/pratik-saha-30a581243/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://github.com/Pratiksaha007" target="_blank"><i class="fa-brands fa-github"></i></i></a>
                     <a href="https://www.facebook.com/pratik.saha.9889261/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://www.instagram.com/pratik._saha/?hl=en" target="_blank"><i class="fa-brands fa-instagram"></i></a>
@@ -205,7 +205,7 @@
     }
 </script>
 
-<script>
+<!-- <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbyZVJG2oKcDM5ZCY9exi9kGCLuQqhGkCK93-7LokaNXUt2Y7bAJ-tEFZ3got66HOP7lYQ/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
@@ -222,6 +222,33 @@
       })
       .catch(error => console.error('Error!', error.message))
   })
+</script> -->
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyZVJG2oKcDM5ZCY9exi9kGCLuQqhGkCK93-7LokaNXUt2Y7bAJ-tEFZ3got66HOP7lYQ/exec';
+  const form = document.forms['submit-to-google-sheet'];
+  const msg = document.getElementById("msg");
+  const btn = form.querySelector("button[type='submit']");
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    btn.textContent = "Sending...";
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent succeccfully.";
+        btn.textContent = "Submit";
+        setTimeout(function(){
+            msg.innerHTML = "";
+        }, 5000);
+        form.reset();
+      })
+      .catch(error => {
+        console.error('Error!', error.message);
+        btn.textContent = "Submit";
+      });
+  });
 </script>
+
+
 </body>
 </html>
